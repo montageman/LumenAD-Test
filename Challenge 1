@@ -1,0 +1,3 @@
+document.querySelector('#link-five p:nth-child(3) .btn').addEventListener('click',function(e){
+	console.log('Button5 was pressed')
+})
