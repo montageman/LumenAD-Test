@@ -1,0 +1,14 @@
+function foo(n){
+var sum = 0;
+
+if(typeof n == 'object'){ //if the item is an object...
+for(var i=0; i <n.length; i++)
+	sum += foo(n[i]); // innitiate recursion for all elements.	
+}
+
+if(typeof n == 'number' && !isNaN(n)){// if the item is a valid number...
+	sum += n;} //add the number to our running total.
+
+//console.log('n is: ',n,' sum is : ',sum) //for testing
+return sum; 
+}
