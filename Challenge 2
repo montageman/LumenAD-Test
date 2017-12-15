@@ -1,0 +1,4 @@
+document.getElementById('form-submit').addEventListener('click',function(e){
+  var number = document.getElementById('exampleFormControlSelect1');
+  console.log(number.options[number.selectedIndex].value)
+})
