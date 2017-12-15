@@ -1,9 +1,9 @@
 function foo(n){
 var sum = 0;
 
-if(typeof n == 'object'){ //if the item is an object...
+if(typeof n == 'object' && n != null){ //if the item is an object...
 for(var i=0; i <n.length; i++)
-	sum += foo(n[i]); // innitiate recursion for all elements.	
+	sum += foo(n[i]); // innitiate recursion for all elements.
 }
 
 if(typeof n == 'number' && !isNaN(n)){// if the item is a valid number...
